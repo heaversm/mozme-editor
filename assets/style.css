@@ -6,6 +6,10 @@
 header#playground_header {
   background: #1e1f26;
   height: 65px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 20px;
 }
 header#playground_header > h1 {
   padding: 0;
@@ -19,7 +23,19 @@ header#playground_header > h1 {
   font-size: 25px;
   line-height: 35px;
   font-family: "IBM Plex Sans", sens-serif;
+  flex: 1;
 }
+
+.header-controls {
+  flex: 0;
+}
+
+.icon-source {
+  filter: invert(1);
+  height: 32px;
+  width: auto;
+}
+
 iframe#code {
   bottom: 0;
   position: relative;
@@ -50,4 +66,8 @@ div#coding_area {
 }
 div#code_output {
   height: 100%;
+}
+
+.js-hidden {
+  display: none !important;
 }
