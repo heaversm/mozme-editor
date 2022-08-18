@@ -26,7 +26,7 @@ if (CURRENT_URL) {
 	var load = CURRENT_URL.searchParams.get("load");
 
 	if (load !== null) {
-		var files = ["../prism-live.css"];
+		var files = ["./prism-live.css"];
 
 		if (load) {
 			files.push(...load.split(/,/).map(c => /\./.test(c)? c : `prism-live-${c}.js`));
