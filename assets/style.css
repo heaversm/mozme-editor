@@ -3,6 +3,11 @@
   margin: 0;
   outline: 0;
 }
+
+body {
+  max-height: 100vh;
+  overflow: hidden;
+}
 header#playground_header {
   background: #1e1f26;
   height: 65px;
@@ -32,7 +37,7 @@ header#playground_header > h1 {
 
 .icon-source {
   filter: invert(1);
-  height: 32px;
+  height: 24px;
   width: auto;
 }
 
@@ -68,6 +73,10 @@ div#code_output {
   height: 100%;
 }
 
-.js-hidden {
+.js-hidden #coding_area {
   display: none !important;
+}
+
+.js-hidden #code {
+  height: calc(100vh - 65px);
 }
